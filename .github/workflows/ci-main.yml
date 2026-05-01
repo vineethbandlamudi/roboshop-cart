@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      = main
+      - main
 jobs:
   Build:
     uses: vineethbandlamudi/roboshop-github-actions/.github/workflows/ci-main.yml@main
