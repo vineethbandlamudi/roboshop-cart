@@ -1,4 +1,4 @@
-name: CI - Main
+name: CICD - Main
 on: 
   workflow_dispatch:
   push:
@@ -7,3 +7,5 @@ on:
 jobs:
   Build:
     uses: vineethbandlamudi/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    with:
+      appType: 'nodejs'
